@@ -70,3 +70,63 @@ button {
   font-weight: 500;
   line-height: normal;
 }
+
+.main {
+  max-width: 892px;
+  padding-top: 32px;
+  padding-left: 120px;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-family: Aleo;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding-bottom: 20px;
+}
+
+.main-text {
+  color: #fff;
+  font-family: Aleo;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.7);
+
+  margin-top: 46px;
+}
+
+.planning {
+  margin: 18px;
+
+  color: #fff;
+  font-family: Red Hat Text;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.search-text {
+  color: #f2785c;
+  font-family: Aleo;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-left: 41px;
+}
