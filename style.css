@@ -294,3 +294,66 @@ h2 {
 
   flex-shrink: 0;
 }
+
+/* Section destinations */
+
+.destinations {
+  background: #f0f6f8;
+
+  max-width: 1440px;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+.title-2 {
+  margin-bottom: 46px;
+}
+
+.countries {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+
+  padding-top: 6px;
+  padding-bottom: 24px;
+}
+
+.slide {
+  width: 800px;
+  height: 800px;
+  flex-shrink: 0;
+
+  position: relative;
+}
+
+.spain {
+  border-radius: 16px;
+  background: url(img/Spain.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.japan {
+  border-radius: 16px;
+  background: url(img/Japan.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.usa {
+  border-radius: 16px;
+  background: url(img/USA.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.name-city {
+  position: absolute;
+  left: 15px;
+  bottom: 40px;
+
+  color: #fff;
+  font-family: Red Hat Text;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
