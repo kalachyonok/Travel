@@ -145,9 +145,9 @@ h1 {
 /* Section steps  */
 
 .steps {
-  background: #fff;
+  background: #f0f6f8;
 
-  max-width: 1177px;
+  max-width: 1440px;
   margin: 0 auto;
 
   flex-direction: column;
@@ -167,18 +167,21 @@ h2 {
   font-weight: 500;
   line-height: normal;
 
-  margin: 0;
+  margin: 0 0 40px 0;
   text-align: center;
 }
 
 .icons {
+  max-width: 1177px;
   display: flex;
 
   text-align: center;
+
   justify-content: space-between;
 
   padding-bottom: 97px;
-  margin-top: 40px;
+
+  margin: 0 auto;
 }
 
 .icon-info-1,
