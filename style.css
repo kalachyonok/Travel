@@ -1,5 +1,11 @@
+/* Header */
+
 .container {
   max-width: 1440px;
+  margin: 0 auto;
+}
+
+.space-bg {
   height: 765px;
   margin: 0 auto;
   background: url(img/bg-main.jpg) no-repeat center;
@@ -71,8 +77,11 @@ button {
   line-height: normal;
 }
 
-.main {
+/* Section preview */
+
+.preview {
   max-width: 892px;
+  height: 630px;
   padding-top: 32px;
   padding-left: 120px;
 }
@@ -89,7 +98,7 @@ h1 {
   padding-bottom: 20px;
 }
 
-.main-text {
+.preview-text {
   color: #fff;
   font-family: Aleo;
   font-size: 20px;
@@ -129,4 +138,60 @@ h1 {
   line-height: normal;
 
   margin-left: 41px;
+}
+
+/* Media  1225px*/
+
+/* Section steps  */
+
+.steps {
+  background: #fff;
+
+  max-width: 1177px;
+  margin: 0 auto;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 80px;
+
+  gap: 40px;
+}
+
+h2 {
+  color: #f2785c;
+  font-family: Red Hat Text;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  margin: 0;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+
+  text-align: center;
+  justify-content: space-between;
+
+  padding-bottom: 97px;
+  margin-top: 40px;
+}
+
+.icon-info-1,
+.icon-info-2,
+.icon-info-3 {
+  margin-top: 30px;
+
+  color: #0d606f;
+  font-family: Aleo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  flex-shrink: 0;
 }
