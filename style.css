@@ -471,3 +471,38 @@ h3 + div {
 .travel {
   margin-top: 40px;
 }
+
+/* Footer */
+
+footer {
+  height: 61px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+
+  margin-bottom: 20px;
+}
+
+.contacts {
+  width: 729px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-right: 123.04px;
+}
+
+.contact-info {
+  color: #fff;
+  font-family: Red Hat Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
