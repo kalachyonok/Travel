@@ -158,8 +158,15 @@ h1 {
   line-height: normal;
 }
 
-.search-text {
-  color: #f2785c;
+input {
+  border: 0;
+  width: 100%;
+
+  padding: 10px;
+  background-color: transparent;
+}
+
+input[type="text"] {
   font-family: Aleo;
   font-size: 24px;
   font-style: italic;
@@ -167,6 +174,14 @@ h1 {
   line-height: normal;
 
   margin-left: 41px;
+}
+
+input::placeholder {
+  color: #f2785c;
+}
+
+input:focus.input {
+  outline: none;
 }
 
 /* Media  1200px*/
