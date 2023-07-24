@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -546,4 +550,196 @@ footer {
 .social {
   display: flex;
   gap: 20px;
+}
+
+/* Modal window "Log in" */
+
+.modal-background {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #818181cc;
+}
+
+.modal-login {
+  width: 650px;
+
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff 0%, #4e95a0 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  padding-top: 25px;
+}
+
+.modal-title {
+  font-size: 32px;
+  font-weight: 700;
+
+  margin-bottom: 30px;
+}
+
+.facebook,
+.google {
+  width: 560px;
+  padding: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.16),
+    0px 0px 3px 0px rgba(13, 96, 111, 0.08);
+
+  margin-bottom: 20px;
+}
+
+.info-social {
+  color: #0d606f;
+  font-family: Red Hat Text;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding-left: 15px;
+}
+
+.color {
+  color: #fff;
+}
+
+.blue {
+  background: #1877f2;
+}
+
+.divide {
+  display: flex;
+  align-items: center;
+
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+
+.line {
+  width: 259px;
+  height: 1px;
+  background: rgba(13, 96, 111, 0.5);
+}
+
+.divide-text {
+  color: rgba(13, 96, 111, 0.5);
+  font-family: Aleo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+label {
+  color: #0d606f;
+  font-family: Aleo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding-bottom: 5px;
+}
+
+#email,
+#password {
+  width: 560px;
+  height: 54px;
+  flex-shrink: 0;
+
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.16) inset,
+    0px 0px 3px 0px rgba(13, 96, 111, 0.08) ins;
+}
+
+#email {
+  margin-bottom: 20px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#email:focus,
+#password:focus {
+  outline: none;
+}
+
+.sign {
+  margin-top: 25px;
+  width: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  background: #0d606f;
+  box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.16),
+    0px 0px 3px 0px rgba(13, 96, 111, 0.08);
+
+  color: #fff;
+  font-family: Red Hat Text;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.forgot {
+  color: #0d606f;
+  font-family: Aleo;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.forgot:hover {
+  cursor: pointer;
+}
+
+.line-2 {
+  margin-top: 26px;
+  margin-bottom: 20px;
+
+  width: 560px;
+  height: 1px;
+  background: rgba(13, 96, 111, 0.5);
+}
+
+.account {
+  color: rgba(13, 96, 111, 0.5);
+  text-shadow: 0px 2px 3px 0px rgba(255, 255, 255, 0.16);
+  font-family: Aleo;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 23px;
 }
