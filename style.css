@@ -743,3 +743,9 @@ form > div {
 
   margin-bottom: 23px;
 }
+
+/* Modal window "Create account" */
+
+.new {
+  z-index: 3;
+}

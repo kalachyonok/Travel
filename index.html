@@ -16,8 +16,9 @@
 
 <body>
 
-  <!-- Modal window "Log in" -->
+  <!-- Modal window -->
   <div class="modal-background">
+    <!-- Modal window "Log in" -->
     <div class="modal-login">
       <h3 class="modal-title">Log in to your account</h3>
       <button class="facebook blue">
@@ -53,9 +54,32 @@
       <div class="line-2"></div>
       <div class="account">Don’t have an account? <span><a href="№" class="forgot">Register</a></span></div>
     </div>
-  </div>
+    <!-- end modal window "Log in" -->
 
-  <!-- end modal window "Log in" -->
+    <!-- Modal window "Create account" -->
+    <div class="modal-login new">
+      <h3 class="modal-title">Create account</h3>
+
+      <form method="post" name="form-email">
+        <div>
+          <label for="email">E-mail</label>
+          <input id="email" type="email">
+        </div>
+
+        <div>
+          <label for="password"> Password </label>
+          <input id="password" type="password">
+        </div>
+      </form>
+
+      <button class="sign">Sign In</button>
+
+      <div class="line-2"></div>
+      <div class="account">Already have an account? <span><a href="№" class="forgot">Log in</a></span></div>
+    </div>
+    <!-- end Modal window "Create account"-->
+
+  </div>
 
   <div class="container">
     <div class="space-bg">
