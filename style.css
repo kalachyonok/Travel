@@ -353,36 +353,19 @@ h2 {
 .countries {
   display: flex;
   justify-content: center;
-  gap: 60px;
 
   padding-top: 6px;
   padding-bottom: 24px;
 }
 
 .slide {
-  width: 800px;
-  height: 800px;
-  flex-shrink: 0;
+  border-radius: 16px;
+}
 
+.image-wrap {
+  margin-left: 30px;
+  margin-right: 30px;
   position: relative;
-}
-
-.spain {
-  border-radius: 16px;
-  background: url(img/Spain.jpg) no-repeat center;
-  background-size: cover;
-}
-
-.japan {
-  border-radius: 16px;
-  background: url(img/Japan.jpg) no-repeat center;
-  background-size: cover;
-}
-
-.usa {
-  border-radius: 16px;
-  background: url(img/USA.jpg) no-repeat center;
-  background-size: cover;
 }
 
 .name-city {
@@ -440,8 +423,19 @@ h2 {
 /* Media Destination */
 
 @media (max-width: 945px) {
-  .slide {
+  .spain,
+  .usa {
+    display: none;
+  }
+
+  .japan {
+    max-width: 100%;
+    /* max-height: 100vh; */
+  }
+
+  .japan img {
     width: 100%;
+    height: auto;
   }
 }
 
