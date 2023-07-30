@@ -437,6 +437,14 @@ h2 {
   line-height: normal;
 }
 
+/* Media Destination */
+
+@media (max-width: 945px) {
+  .slide {
+    width: 100%;
+  }
+}
+
 /* Section stories */
 
 .title-3 {
@@ -448,7 +456,7 @@ h2 {
 
 .back-photo {
   max-width: 1440px;
-  height: 1331px;
+  /* height: 1331px; */
   flex-shrink: 0;
 
   background: url(img/Rectangle\ 33.jpg) no-repeat center;
@@ -457,10 +465,11 @@ h2 {
 
 .stories {
   max-width: 1440px;
-  height: 1270px;
+  /* height: 1270px; */
   flex-shrink: 0;
 
   background: rgba(255, 255, 255, 0.7);
+  padding-bottom: 41px;
 }
 
 .wrap {
@@ -477,6 +486,7 @@ h2 {
 }
 
 .travel-picture {
+  height: fit-content;
   border-radius: 16px;
   box-shadow: 0px 4px 4px 0px #0d606f;
 }
@@ -524,8 +534,6 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-content: center;
-
-  margin-bottom: 20px;
 }
 
 .contacts {
@@ -555,6 +563,7 @@ footer {
 /* Modal window "Log in" */
 
 .modal-background {
+  display: none;
   position: fixed;
   z-index: 1;
   width: 100vw;
