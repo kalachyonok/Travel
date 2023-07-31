@@ -474,8 +474,8 @@ h2 {
   display: flex;
   gap: 40px;
 
-  margin-left: 120px;
-  margin-right: 125px;
+  margin-left: 8.69%;
+  margin-right: 8.69%;
   margin-bottom: 30px;
 }
 
@@ -483,6 +483,10 @@ h2 {
   height: fit-content;
   border-radius: 16px;
   box-shadow: 0px 4px 4px 0px #0d606f;
+}
+
+.right {
+  max-height: 184px;
 }
 
 h3 {
@@ -494,6 +498,24 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.sticky-wrap-text {
+  display: flex;
+  min-width: 0;
+  max-width: 760px;
+  /* max-height: 215px; */
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.sticky-text {
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
 
 h3 + div {
@@ -519,6 +541,42 @@ h3 + div {
 
 .travel {
   margin-top: 40px;
+}
+
+/* Media 1200px */
+
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 30px;
+  }
+
+  .sticky-text,
+  .full-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 920px) {
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .sticky-text,
+  .full-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 750px) {
+  h3 {
+    font-size: 11px;
+  }
+
+  .sticky-text,
+  .full-text {
+    font-size: 9px;
+  }
 }
 
 /* Footer */
