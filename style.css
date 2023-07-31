@@ -479,14 +479,16 @@ h2 {
   margin-bottom: 30px;
 }
 
+.img-wrap {
+  max-width: 100%;
+}
+
 .travel-picture {
+  width: 100%;
+  height: auto;
   height: fit-content;
   border-radius: 16px;
   box-shadow: 0px 4px 4px 0px #0d606f;
-}
-
-.right {
-  max-height: 184px;
 }
 
 h3 {
@@ -504,7 +506,6 @@ h3 {
   display: flex;
   min-width: 0;
   max-width: 760px;
-  /* max-height: 215px; */
   overflow: hidden;
   flex-direction: column;
 }
@@ -547,12 +548,16 @@ h3 + div {
 
 @media (max-width: 1200px) {
   h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .sticky-text,
   .full-text {
     font-size: 18px;
+  }
+
+  .sticky-wrap-text {
+    padding-top: 10px;
   }
 }
 
