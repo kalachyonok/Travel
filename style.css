@@ -619,8 +619,11 @@ footer {
 
 /* Modal window "Log in" */
 
+.hidden {
+  visibility: hidden;
+}
+
 .modal-background {
-  display: none;
   position: fixed;
   z-index: 1;
   width: 100vw;
@@ -630,9 +633,8 @@ footer {
 
 .modal-login {
   width: 650px;
-
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -813,5 +815,5 @@ form > div {
 /* Modal window "Create account" */
 
 .new {
-  z-index: 3;
+  z-index: 1;
 }

@@ -17,69 +17,71 @@
 <body>
 
   <!-- Modal window -->
-  <div class="modal-background">
-    <!-- Modal window "Log in" -->
-    <div class="modal-login">
-      <h3 class="modal-title">Log in to your account</h3>
-      <button class="facebook blue">
-        <img src="img/icons8-facebook-новый.svg" alt="facebook logo">
-        <div class="info-social color">Sign In with Facebook</div>
-      </button>
-      <button class="google">
-        <img src="img/icons8-google.svg" alt="google logo">
-        <div class="info-social">Sign In with Google</div>
-      </button>
+  <div class="modal-background hidden"></div>
+  <!-- Modal window "Log in" -->
+  <div class="modal-login hidden">
+    <h3 class="modal-title">Log in to your account</h3>
+    <button class="facebook blue">
+      <img src="img/icons8-facebook-новый.svg" alt="facebook logo">
+      <div class="info-social color">Sign In with Facebook</div>
+    </button>
+    <button class="google">
+      <img src="img/icons8-google.svg" alt="google logo">
+      <div class="info-social">Sign In with Google</div>
+    </button>
 
-      <div class="divide">
-        <div class="line"></div>
-        <div class="divide-text">or</div>
-        <div class="line"></div>
+    <div class="divide">
+      <div class="line"></div>
+      <div class="divide-text">or</div>
+      <div class="line"></div>
+    </div>
+
+    <form method="post" action="/" name="form-email">
+      <div>
+        <label for="email">E-mail</label>
+        <input id="email" type="email">
       </div>
 
-      <form method="post" name="form-email">
-        <div>
-          <label for="email">E-mail</label>
-          <input id="email" type="email">
-        </div>
-
-        <div>
-          <label for="password"> Password </label>
-          <input id="password" type="password">
-        </div>
-      </form>
+      <div>
+        <label for="password"> Password </label>
+        <input id="password" type="password">
+      </div>
 
       <button class="sign">Sign In</button>
+    </form>
 
-      <div><a href="#" class="forgot">Forgot Your Password?</a></div>
-      <div class="line-2"></div>
-      <div class="account">Don’t have an account? <span><a href="№" class="forgot">Register</a></span></div>
-    </div>
-    <!-- end modal window "Log in" -->
 
-    <!-- Modal window "Create account" -->
-    <div class="modal-login new">
-      <h3 class="modal-title">Create account</h3>
 
-      <form method="post" name="form-email">
-        <div>
-          <label for="email">E-mail</label>
-          <input id="email" type="email">
-        </div>
-
-        <div>
-          <label for="password"> Password </label>
-          <input id="password" type="password">
-        </div>
-      </form>
-
-      <button class="sign">Sign In</button>
-
-      <div class="line-2"></div>
-      <div class="account">Already have an account? <span><a href="№" class="forgot">Log in</a></span></div>
-    </div>
-    <!-- end Modal window "Create account"-->
-
+    <div><a href="#" class="forgot">Forgot Your Password?</a></div>
+    <div class="line-2"></div>
+    <div class="account">Don’t have an account? <span><a href="№" class="forgot">Register</a></span></div>
   </div>
+  <!-- end modal window "Log in" -->
+
+  <!-- Modal window "Create account" -->
+  <div class="modal-login new hidden">
+    <h3 class="modal-title">Create account</h3>
+
+    <form method="post" name="form-email">
+      <div>
+        <label for="email">E-mail</label>
+        <input id="email" type="email">
+      </div>
+
+      <div>
+        <label for="password"> Password </label>
+        <input id="password" type="password">
+      </div>
+    </form>
+
+    <button class="sign">Sign In</button>
+
+    <div class="line-2"></div>
+    <div class="account">Already have an account? <span><a href="№" class="forgot">Log in</a></span></div>
+  </div>
+  <!-- end Modal window "Create account"-->
+
+
 
   <div class="container">
     <div class="space-bg">
@@ -299,7 +301,7 @@
 
     </div>
   </div>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
