@@ -732,7 +732,10 @@ label {
 }
 
 #email,
-#password {
+#password,
+#email-creat,
+#password-creat {
+  font-size: 20px;
   width: 560px;
   height: 54px;
   flex-shrink: 0;
@@ -743,7 +746,8 @@ label {
     0px 0px 3px 0px rgba(13, 96, 111, 0.08) ins;
 }
 
-#email {
+#email,
+#email-creat {
   margin-bottom: 20px;
 }
 
@@ -753,7 +757,9 @@ form > div {
 }
 
 #email:focus,
-#password:focus {
+#password:focus,
+#email-creat:focus,
+#password-creat:focus {
   outline: none;
 }
 
