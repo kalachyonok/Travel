@@ -564,7 +564,7 @@ footer {
   position: fixed;
   z-index: 5;
   top: 50%;
-  left: 50%;
+  left: 46.5%;
   transform: translate(-50%, -50%);
 
   display: flex;
@@ -576,7 +576,8 @@ footer {
   background: linear-gradient(180deg, #fff 0%, #4e95a0 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-  padding-top: 25px;
+  padding: 25px 45px 0;
+  margin: 0px 25px;
 }
 
 .modal-title {
@@ -588,7 +589,7 @@ footer {
 
 .facebook,
 .google {
-  width: 560px;
+  width: 100%;
   padding: 15px;
 
   display: flex;
@@ -664,7 +665,7 @@ label {
 #email-creat,
 #password-creat {
   font-size: 20px;
-  width: 560px;
+  /* width: 560px; */
   height: 54px;
   flex-shrink: 0;
 
@@ -684,6 +685,10 @@ form > div {
   flex-direction: column;
 }
 
+.form {
+  width: 100%;
+}
+
 #email:focus,
 #password:focus,
 #email-creat:focus,
@@ -693,7 +698,7 @@ form > div {
 
 .sign {
   margin-top: 25px;
-  width: 560px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -756,6 +761,8 @@ form > div {
 
 .burger {
   position: absolute;
+  top: 15px;
+  right: 15px;
   height: 250px;
   width: 165px;
   border-radius: 10px;
@@ -894,6 +901,10 @@ form > div {
 
   .contacts {
     margin: 0;
+  }
+
+  .modal-login {
+    width: 90%;
   }
 }
 
