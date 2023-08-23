@@ -31,7 +31,7 @@ body {
 
   flex-shrink: 0;
 
-  padding: 26px 120px 24px;
+  padding: 25px 120px 24px;
 
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px 0px rgba(13, 96, 111, 0.5);
@@ -188,96 +188,6 @@ input:focus.input {
   outline: none;
 }
 
-/* Media  1200px*/
-
-@media (max-width: 1200px) {
-  .preview {
-    padding-left: 0;
-    margin: 0 auto;
-  }
-
-  .nav,
-  .login {
-    display: none;
-  }
-
-  .menu {
-    display: block;
-  }
-}
-
-/* Media  938px */
-
-@media (max-width: 961px) {
-  .text-logo {
-    display: none;
-    transition: 5s;
-  }
-
-  h1 {
-    visibility: hidden;
-  }
-
-  .search,
-  .preview-text {
-    margin-left: 15.2px;
-    margin-right: 15.2px;
-  }
-}
-
-@media (max-width: 695px) {
-  h1 {
-    display: none;
-  }
-
-  .search-text {
-    font-size: 20px;
-  }
-
-  .planning {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 610px) {
-  .search-text {
-    font-size: 18px;
-  }
-
-  .planning {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 560px) {
-  .search-text {
-    font-size: 16px;
-    margin-left: 16.55px;
-  }
-
-  .planning {
-    font-size: 16px;
-    margin: 9px;
-  }
-}
-
-@media (max-width: 485px) {
-  .search-text {
-    font-size: 14px;
-  }
-
-  .planning {
-    font-size: 11px;
-    margin: 9px;
-    padding: 9px;
-  }
-
-  .header {
-    background: rgba(242, 120, 92, 0);
-    box-shadow: 0px 4px 4px 0px rgba(13, 96, 111, 0);
-  }
-}
-
 /* Section steps  */
 
 .steps {
@@ -318,6 +228,14 @@ h2 {
   padding-bottom: 97px;
 
   margin: 0 auto;
+}
+
+.icon-info-1 {
+  padding-left: 15px;
+}
+
+.icon-info-3 {
+  padding-right: 15px;
 }
 
 .icon-info-1,
@@ -436,6 +354,10 @@ h2 {
   .japan img {
     width: 100%;
     height: auto;
+  }
+
+  .preview {
+    height: 550px;
   }
 }
 
@@ -610,6 +532,7 @@ footer {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding-left: 123px;
 }
 
 .social {
@@ -822,4 +745,216 @@ form > div {
 
 .new {
   z-index: 1;
+}
+
+/* Media  1200px*/
+
+@media (max-width: 1200px) {
+  .preview {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .nav,
+  .login {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .header {
+    padding-top: 43px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* Media  938px */
+
+@media (max-width: 961px) {
+  .text-logo {
+    display: none;
+    transition: 5s;
+  }
+
+  h1 {
+    visibility: hidden;
+  }
+
+  .search,
+  .preview-text {
+    margin-left: 15.2px;
+    margin-right: 15.2px;
+  }
+
+  .steps {
+    padding-top: 60px;
+  }
+
+  .icons {
+    padding-bottom: 77px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .icon-info-1,
+  .icon-info-2,
+  .icon-info-3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .icon-info-1,
+  .icon-info-2,
+  .icon-info-3 {
+    font-size: 16px;
+  }
+
+  .steps-trip {
+    width: 85px;
+    height: 85px;
+  }
+
+  .steps {
+    padding-top: 40px;
+  }
+
+  .icons {
+    padding-bottom: 57px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .icon-info-1,
+  .icon-info-2,
+  .icon-info-3 {
+    font-size: 18px;
+  }
+
+  .title-3 {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 715px) {
+  .contact-info {
+    display: none;
+  }
+
+  .social {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .contacts {
+    margin: 0;
+  }
+}
+
+@media (max-width: 695px) {
+  h1 {
+    display: none;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .search-text {
+    font-size: 20px;
+  }
+
+  .planning {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  input[type="text"] {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .search-text {
+    font-size: 18px;
+  }
+
+  .planning {
+    font-size: 18px;
+  }
+
+  input[type="text"] {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .search-text {
+    font-size: 16px;
+    margin-left: 16.55px;
+  }
+
+  .planning {
+    font-size: 16px;
+    margin: 9px;
+  }
+
+  input[type="text"] {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 485px) {
+  .search-text {
+    font-size: 14px;
+  }
+
+  .planning {
+    font-size: 11px;
+    margin: 9px;
+    padding: 9px;
+  }
+
+  .header {
+    background: rgba(242, 120, 92, 0);
+    box-shadow: 0px 4px 4px 0px rgba(13, 96, 111, 0);
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+    margin-left: 16.55px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .preview-text {
+    display: none;
+  }
+
+  .preview {
+    padding: 0;
+    height: 450px;
+  }
+
+  .planning {
+    font-size: 11px;
+  }
 }
