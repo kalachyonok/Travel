@@ -51,6 +51,7 @@ const closeModalWindowLogin = function () {
   blurBack.classList.add("hidden");
   modalLogin.classList.add("hidden");
   modalCreate.classList.add("hidden");
+  btnOpenMenu.classList.remove("visibility");
 };
 
 btnLogin.addEventListener("click", openModalWindowLogin);
@@ -103,4 +104,11 @@ btnOpenMenu.addEventListener("click", function () {
 bntCloseBurger.addEventListener("click", function () {
   burgerWindow.classList.add("visibility");
   btnOpenMenu.classList.remove("visibility");
+});
+
+const linkAccountBurger = document.querySelector(".account-burger");
+
+linkAccountBurger.addEventListener("click", () => {
+  burgerWindow.classList.add("visibility");
+  openModalWindowLogin();
 });
