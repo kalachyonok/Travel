@@ -1,5 +1,7 @@
 "use strict";
 
+// Open modal window
+
 const btnLogin = document.querySelector(".login");
 const btnSignInLogin = document.querySelector("#submit-login");
 const btnSignInCreate = document.querySelector("#submit-create");
@@ -85,4 +87,20 @@ btnSignInCreate.addEventListener("click", function (e) {
     inputCreatEmail.value = "";
     inputCreatPassword.value = "";
   }
+});
+
+// Open burger menu
+
+const btnOpenMenu = document.querySelector(".menu");
+const bntCloseBurger = document.querySelector(".close-burger");
+const burgerWindow = document.querySelector(".burger");
+
+btnOpenMenu.addEventListener("click", function () {
+  burgerWindow.classList.remove("visibility");
+  btnOpenMenu.classList.add("visibility");
+});
+
+bntCloseBurger.addEventListener("click", function () {
+  burgerWindow.classList.add("visibility");
+  btnOpenMenu.classList.remove("visibility");
 });
