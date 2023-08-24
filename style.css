@@ -75,7 +75,7 @@ li a {
   font-weight: 500;
   line-height: normal;
 
-  transition: 0.7s;
+  /* transition: 0.7s; */
 }
 
 li a:hover {
@@ -223,16 +223,17 @@ h2 {
 }
 
 .icons {
-  max-width: 1177px;
+  /* max-width: 1177px; */
+  /* flex-basis: 1177px; */
   display: flex;
 
   text-align: center;
 
-  justify-content: space-between;
+  justify-content: space-around;
 
   padding-bottom: 97px;
 
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .icon-info-1 {
@@ -247,7 +248,7 @@ h2 {
 .icon-info-2,
 .icon-info-3 {
   margin-top: 30px;
-
+  /* width: 33.3%; */
   color: #0d606f;
   font-family: Aleo;
   font-size: 20px;
@@ -255,7 +256,7 @@ h2 {
   font-weight: 400;
   line-height: normal;
 
-  flex-shrink: 0;
+  /* flex-shrink: 1; */
 }
 
 /* Section destinations */
@@ -783,6 +784,7 @@ form > div {
   position: absolute;
   left: 5px;
   top: 5px;
+  /* transition: 0.7s; */
 }
 
 .close-burger:hover {
@@ -872,6 +874,10 @@ form > div {
 
   .icons {
     padding-bottom: 57px;
+  }
+
+  .icon {
+    width: 33.33%;
   }
 
   h2 {
